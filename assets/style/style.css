@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Red Hat Text;
+    font-weight: 700;
+    background: linear-gradient(180deg,
+            #1d1e28 0.12%,
+            #261c2d 94.84%,
+            #261a2d 100%);
+}
+
+h1 {
+    color: white;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 6.136363506317139px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 142px 24px 48px 24px;
+    background-image: url("/assets/images/bg-stars.svg"),
+        url("/assets/images/pattern-hills.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right bottom;
+    align-items: center;
+    background-size: contain;
+}
+
+.container {
+    flex-direction: row;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements {
+    font-size: 7px;
+    letter-spacing: 2.95937px;
+    color: #8385a9;
+    margin-top: 55px;
+    align-items: center;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    background: rgba(25, 26, 35, 0.5);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    height: 71px;
+    width: 70px;
+}
+
+.two {
+    background: radial-gradient(circle at 0 100%,
+            rgba(25, 26, 35, 1) 4px,
+            #2d2f42 0px),
+        radial-gradient(circle at 100% 100%, rgba(25, 26, 35, 1) 4px, #2d2f42 0px),
+        radial-gradient(circle at 100% 0, rgba(25, 26, 35, 1) 4px, #343650 0px),
+        radial-gradient(circle at 0 0, rgba(25, 26, 35, 1) 4px, #343650 0px);
+    background-position: top left, top right, bottom right, bottom left;
+    backdrop-filter: brightness(0.7);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    height: 66.26667022705078px;
+    width: 70px;
+    border-radius: 8px;
+}
+
+.number {
+    color: #fb5e84;
+    font-size: 36px;
+    line-height: 71px;
+    letter-spacing: -1.0800000429153442px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 259px;
+    display: flex;
+    gap: 32px;
+    position: fixed;
+    bottom: 7%;
+    text-align: center;
+}
+
+/* desktop size */
+
+@media (min-width:1024px) {
+    h1 {
+
+        font-size: 22px;
+        line-height: 29px;
+        letter-spacing: 7.5px;
+    }
+
+    .two,
+    .one {
+        height: 150px;
+        width: 148px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .number {
+        font-size: 80px;
+        line-height: 71px;
+        letter-spacing: -2.4000000953674316px;
+        text-align: center;
+
+    }
+
+    .elements {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 5.918749809265137px;
+        text-align: center;
+        gap: 16px;
+    }
+
+}
