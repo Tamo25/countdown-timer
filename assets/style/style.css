@@ -32,7 +32,7 @@ main {
     padding: 142px 24px 48px 24px;
     background-image: url("/assets/images/bg-stars.svg"),
         url("/assets/images/pattern-hills.svg");
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: repeat, no-repeat;
     background-position: right top, right bottom;
     align-items: center;
     background-size: contain;
